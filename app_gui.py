@@ -19,7 +19,9 @@ try:
     with open("tareas.txt", "r") as archivo:
         for linea in archivo:
             lista_tareas.insert(tk.END, linea.strip())
-    
+except FileNotFoundError:
+    pass    
+
 
 
 
